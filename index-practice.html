@@ -4,23 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Transitions</title>
+    <title>Transformations</title>
     <style>
       .box {
-        background-color: rgb(74, 204, 74);
-        color: white;
-        transition: color 0.5s ease-in-out;
+        width: 100px;
+        height: 100px;
+        background: red;
+        transition: transform 0.5s ease-in-out;
       }
       .box:hover {
-        background-color: red;
-        color: blue;
+        transform: rotate(1turn) scale(0.5, 0.5);
       }
     </style>
   </head>
 
   <body>
-    <span class="box">
-      Text
-    </span>
+    <div class="box"></div>
   </body>
 </html>
